@@ -1,5 +1,5 @@
 ## EX.NO: 03 <br>
-## DATE:
+## DATE: 29.03.2023
 ## <p align="center">COLOR CONVERSION</p>
 
 ## Aim:
@@ -35,11 +35,10 @@ Output the image using cv2.imshow("OUTPUT", image)
 <br>
 
 ## Program:
-```python
 # Developed By:M VIGNESH
 # Register Number:212220233002
 # i) Convert BGR and RGB to HSV and GRAY
-
+```python
 import cv2
 image=cv2.imread('1.jpg')
 hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -52,11 +51,10 @@ cv2.imshow('RGB2GRAY',gray_img)
 cv2.imshow('BGR2GRAY',gray1_img )
 cv2.waitKey(0)
 cv2.destroyAllWindows
-
-
+```
 
 # ii)Convert HSV to RGB and BGR
-
+```PYTHON
 import cv2
 image=cv2.imread('1.jpg')
 hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -67,20 +65,19 @@ hsv2_img = cv2.cvtColor(image, cv2.COLOR_HSV2BGR)
 cv2.imshow('RGB2GRAY',hsv2_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows
-
+```
 
 # iii)Convert RGB and BGR to YCrCb
-
+```PYTHON
 RGB_YCrCb=cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb)
 cv2.imshow("RGB_YCrCb_IMAGE",RGB_YCrCb)
 BGR_YCrCb=cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
 cv2.imshow("BGR_YCrCb_IMAGE",BGR_YCrCb)
 cv2.waitKey(0)
-
-
+```
 
 # iv)Split and Merge RGB Image
-
+```PYTHON
 blue = image[:,:,0]
 cv2.imshow("blue",blue)
 green = image[:,:,1]
@@ -90,11 +87,10 @@ cv2.imshow("red",red)
 merged=cv2.merge((blue,green,red))
 cv2.imshow("merged",merged)
 cv2.waitKey(0)
-
-
+```
 
 # v) Split and merge HSV Image
-
+```PYTHON
 hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 cv2.imshow("ORIGINAL HSV_IMAGE",hsv)
 h, s, v = cv2.split(hsv)
@@ -104,10 +100,8 @@ cv2.imshow('v_plane', v)
 mergedhsv=cv2.merge((h,s,v))
 cv2.imshow('merged',mergedhsv)
 cv2.waitKey(0)
-
-
-
 ```
+
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
 <br>|
