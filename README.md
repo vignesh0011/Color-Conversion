@@ -35,8 +35,8 @@ Output the image using cv2.imshow("OUTPUT", image)
 <br>
 
 ## Program:
-# Developed By:M VIGNESH
-# Register Number:212220233002
+### Developed By:M VIGNESH
+### Register Number:212220233002
 # i) Convert BGR and RGB to HSV and GRAY
 ```python
 import cv2
